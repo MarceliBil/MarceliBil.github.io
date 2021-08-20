@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rampart One";
+}
+
+.flex__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .left,
+.wrapper .right {
+  width: 50%;
+  height: 100%;
+}
+
+.wrapper .left {
+  background-color: #734b5e;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.wrapper .left .logo__link {
+  width: 80%;
+  max-width: 400px;
+}
+
+.wrapper .left .logo__link .logo__img {
+  width: 100%;
+}
+
+.wrapper .left .footer {
+  position: absolute;
+  bottom: 20px;
+}
+
+.wrapper .left .footer .copyright {
+  color: #dedede;
+}
+
+.wrapper .right {
+  background-color: #dedede;
+  padding: 15px;
+}
+
+.wrapper .right h1 {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper .left,
+  .wrapper .right {
+    width: 100%;
+  }
+  .wrapper .left h1,
+  .wrapper .right h1 {
+    font-size: 2.2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
